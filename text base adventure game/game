@@ -1,0 +1,92 @@
+print("""
+ ____ ___  _ _____  _     ____  _        ____  _     _  ____ 
+/  __\\  \///__ __\/ \ /|/  _ \/ \  /|  /  _ \/ \ /\/ \/_   \
+|  \/| \  /   / \  | |_||| / \|| |\ ||  | / \|| | ||| | /   /
+|  __/ / /    | |  | | ||| \_/|| | \||  | \_\|| \_/|| |/   /_
+\_/   /_/     \_/  \_/ \|\____/\_/  \|  \____\\____/\_/\____/ 
+""")
+                                                             
+
+
+print("Hello, welcome to my quiz")
+
+ans = input('Are you readt to play yes/no):')
+score = 0
+total_q = 4
+
+if ans.lower() == 'yes':
+    ans = input('1. What is the best programming language? ')
+    if ans.lower() == 'python':
+        score += 1
+        print('Correct')
+    else:
+        print('Incorrect')
+
+    ans = input('2. What year did queen elizabeth pass away? ')
+    if ans.lower() == '2022':
+        score += 1
+        print('Correct')
+    else:
+        print('Incorrect')
+
+    ans = input('3. What year did england win the world cup? ')
+    if ans.lower() == '1966':
+        score += 1
+        print('Correct')
+    else:
+        print('Incorrect')
+
+    ans = input('4. How old do you have to be to recieve a personalised card from king Charles? ')
+    if ans.lower() == '100':
+        score += 1
+        print('Correct')
+    else:
+        print('Incorrect')
+
+    ans = input('5. How many kids does david beckham have? ')
+    if ans.lower() == '4':
+        score += 1
+        print('Correct')
+    else:
+        print('Incorrect')
+
+    ans = input('6. Who is the current prime minster? ')
+    if ans.lower() == 'rishi sunak':
+        score += 1
+        print('Correct')
+    else:
+        print('Incorrect')
+
+    ans = input('7.Which city are the beatles from?  ')
+    if ans.lower() == 'liverpool':
+        score += 1        
+        print('Correct')
+    else:
+        print('Incorrect')
+
+    ans = input('8. Who is Married to Kate Middleton? ')
+    if ans.lower() == 'prince william':
+        score += 1
+        print('Correct')
+    else:
+        print('Incorrect')
+
+    ans = input('9.What is the largest country in the UK? ')
+    if ans.lower() == 'england':
+        score += 1
+        print('Correct')
+    else:
+        print('Incorrect')
+
+    ans = input('10. Which flower is worn for remembrance day? ')
+    if ans.lower() == 'poppy':
+        score += 1
+        print('Correct')
+    else:
+        print('Incorrect')
+
+print('Thank you for playing, you got ', score, "questions correct.")
+mark= (score/total_q) * 100
+
+print("Mark", mark)
+print("GOODBYE!")
